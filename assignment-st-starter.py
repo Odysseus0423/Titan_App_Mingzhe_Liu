@@ -5,7 +5,7 @@ import streamlit as st
 st.title('Titan App by Mingzhe Liu')
 
 df = pd.read_csv('train.csv')
-st.DataFrame(df)
+st.dataframe(df)
 fig, ax = plt.subplots(1, 3, figsize=(15, 5))
 
 Pclass1 = df[df['Pclass'] == 1]['Fare']
